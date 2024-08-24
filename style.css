@@ -1,0 +1,515 @@
+.material-symbols-outlined {
+    font-family: 'Material Icons';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: auto; */
+   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: auto;
+    
+}
+
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+
+}
+
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+.star{
+    padding: 10px 0;
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;    
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    
+display: flex;
+
+    padding: 0 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.1s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar span:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar span.active {
+    color: rgb(92, 83, 83);
+}
+
+
+
+.navbar span {
+    font-size: 1.2rem;
+    padding: 0 8px;
+    font-weight: 800;
+    transition: 0.1s ease;
+    cursor: pointer;
+
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+/* Mobile Nav */
+
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+
+}
+
+
+
+#bar {
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+#bar:hover,
+#bar.active {
+    color: white;
+}
+
+@media only screen and (max-width:991px) {
+
+    body>nav>div>button:hover,
+    body>nav>div>button:focus {
+        background-color: rgb(121, 23, 23);
+    }
+
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar {
+        color: white;
+    }
+
+}
+
+#home {
+    background-image: url("img/banner/2.jpg");
+    background-size: cover; /* Scales the background image to cover the entire element */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    height: 90vh; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#home {
+    height: 90vh;
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    #home {
+        height: 80vh; /* Adjust the height for smaller screens */
+        background-position: center; /* Center the image */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    #home {
+        height: 50vh; /* Further adjust the height */
+        background-position: center; /* Center the image for mobile */
+    }
+}
+
+
+
+#home h1 {
+    color: black;
+    font: bold;
+}
+
+#home h1{
+    font-size: 3.5vw;
+}
+
+#home h5{
+    font-size: 1.6vw;
+}
+
+#home p{
+    font-size: 1vw;
+}
+
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 1rem 25px;
+    margin: 10px 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transform: 0.3s ease;
+}
+
+button:hover {
+
+    font-size: 0.9rem;
+    margin: 11px 13px;
+    border: none;
+}
+
+#parts .one img {
+    width: 100%;
+    height: 65vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#parts .one .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+#parts .one:hover .details {
+    cursor: pointer;
+    background-color: rgb(200, 184, 184, 0.7);
+
+}
+
+#parts .one .details button {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    padding: 2.5px;
+    /* transform: translateY(70px); */
+    transition: 0.3s ease;
+   outline: none;
+}
+
+#parts .one .details button:hover{
+    color: black;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+h2{
+    font-weight: bold;
+}
+
+#parts .one:nth-child(1) .details{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: center;
+}
+#parts .one:nth-child(2) .details{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: center;
+}
+#parts .one:nth-child(3) .details{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: center;
+}
+
+#featurgb(138, 79, 79) img{
+    width: 100%;
+}
+
+(138, 79, 79) p{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+
+}
+
+/* Products */
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s ease all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-btn{
+    background-color: black;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-btn{
+    background-color: black;
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+#banner{
+    background-image: url("img/back.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner h4{
+    color: #D8D8D8;
+}
+
+#banner h1{
+    color:white;
+}
+
+#banner button{
+    background-color: black;
+}
+
+h6{
+ color: rgb(151, 143, 143);
+}
+
+footer{
+    background-color: black;
+}
+
+footer h5{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li{
+    padding-bottom:4px;
+}
+
+footer li a{
+    font-size: .8rem;
+   
+}
+footer li a:hover{
+    font-size: 0.8rem;
+    color: #D8D8D8;
+}
+footer p{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+footer.copyright a{
+    color: black;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transform: 0.3s ease;
+    margin: 0 5px;
+}
+footer.copyright a:hover{
+    color: #fff;
+    background-color: ;
+}
+
+ footer .logo{
+    color: white;
+    font: bold;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 23px;
+ }
+
+
+ /* blog */
+
+ #blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+
+ }
+
+ #blog-container .post img{
+transition: 0.3s ease;
+ }
+
+ #blog-container .post:hover img{
+transform: scale(1.3) rotate(-10deg);
+opacity: 0.78;
+ }
+
+ #blog-container .post h3{
+    transition: 0.3s ease;
+    cursor: pointer;
+ }
+
+ /* cart */
+
+ #cart-container{
+
+    overflow-x: auto;
+ }
+
+ #cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+ }
+
+ #cart-container table thead{
+    font-weight:  700;
+
+ }
+
+ #cart-container table thead td{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 6px 0;
+
+ }
+
+ #cart-container table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+ }
+
+ #cart-container table td:nth-child(1){
+    width: 100px;
+ }
+
+ #cart-container table td:nth-child(2),
+ #cart-container table td:nth-child(3){
+    width: 200px;
+}
+
+ #cart-container table td:nth-child(4),
+ #cart-container table td:nth-child(5),
+ #cart-container table td:nth-child(6){
+    width: 170px;
+}
+
+ #cart-container table tbody img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+ }
+
+ #cart-container table tbody i{
+    color: gray;
+
+ }
+
+ .coupon button{
+    border: none;
+ }
+
+ #cart-bottom .coupon>div,
+ #cart-bottom .total>div{
+    border: 1px solid black;
+
+ }
+
+ #cart-bottom .coupon h5,
+ #cart-bottom .total h5{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+ }
+ 
+ #cart-bottom .coupon p,
+ #cart-bottom .coupon input{
+ padding:  0 12px;
+ }
+
+ #cart-bottom .coupon input{
+    height: 44px;
+ }
+ #cart-bottom .coupon input,
+ #cart-bottom .coupon button{
+    margin: 0 0 20px 12px;
+ }
+
+ #cart-bottom .total div>div{
+    padding: 0 12px;
+ }
+
+ #cart-bottom .total h6{
+    color: #2a2a2a;
+ }
+
+ .second-hr{
+    background-color: #b8b7b3;
+    width: 100%;
+    height: 1px;
+ }
+
+ #cart-bottom .total div>button{
+    border: none;
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+
+ }
+
+ 
