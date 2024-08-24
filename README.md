@@ -1,1 +1,1 @@
-# E-Commerce-Website
+I have developed an e-commerce website to showcase my web design expertise. This project primarily emphasizes my proficiency in HTML and CSS, with supplementary use of JavaScript to enhance functionality.
